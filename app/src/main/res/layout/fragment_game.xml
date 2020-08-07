@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.game.GameFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iv_current"
+            android:layout_width="120dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.866"
+            app:layout_constraintStart_toEndOf="@+id/tv_gameCurrentCard"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/begin"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/iv_0"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gameYourBoard"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/iv_1"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_0"
+            app:layout_constraintStart_toEndOf="@+id/iv_0"
+            app:layout_constraintTop_toTopOf="@+id/iv_0"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/iv_2"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_1"
+            app:layout_constraintStart_toEndOf="@+id/iv_1"
+            app:layout_constraintTop_toTopOf="@+id/iv_1"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/iv_3"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/iv_2"
+            app:layout_constraintTop_toTopOf="@+id/iv_2"
+            app:layout_constraintVertical_bias="0.0"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/iv_4"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            app:layout_constraintStart_toStartOf="@+id/iv_0"
+            app:layout_constraintTop_toBottomOf="@+id/iv_0"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/iv_5"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            app:layout_constraintStart_toEndOf="@+id/iv_4"
+            app:layout_constraintTop_toBottomOf="@+id/iv_1"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/iv_6"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            app:layout_constraintStart_toEndOf="@+id/iv_5"
+            app:layout_constraintTop_toBottomOf="@+id/iv_2"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/iv_7"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            app:layout_constraintEnd_toEndOf="@+id/iv_3"
+            app:layout_constraintStart_toEndOf="@+id/iv_6"
+            app:layout_constraintTop_toBottomOf="@+id/iv_3"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/iv_8"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            app:layout_constraintStart_toStartOf="@+id/iv_4"
+            app:layout_constraintTop_toBottomOf="@+id/iv_4"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/iv_9"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            app:layout_constraintStart_toEndOf="@+id/iv_8"
+            app:layout_constraintTop_toBottomOf="@+id/iv_5"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/iv_10"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            app:layout_constraintStart_toEndOf="@+id/iv_9"
+            app:layout_constraintTop_toBottomOf="@+id/iv_6"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/iv_11"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            app:layout_constraintStart_toEndOf="@+id/iv_10"
+            app:layout_constraintTop_toBottomOf="@+id/iv_7"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/iv_12"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            app:layout_constraintStart_toStartOf="@+id/iv_8"
+            app:layout_constraintTop_toBottomOf="@+id/iv_8"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/iv_13"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            app:layout_constraintStart_toEndOf="@+id/iv_12"
+            app:layout_constraintTop_toBottomOf="@+id/iv_9"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/iv_14"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            app:layout_constraintStart_toEndOf="@+id/iv_13"
+            app:layout_constraintTop_toBottomOf="@+id/iv_10"
+            tools:src="@tools:sample/avatars" />
+
+        <ImageView
+            android:id="@+id/iv_15"
+            android:layout_width="100dp"
+            android:layout_height="105dp"
+            app:layout_constraintStart_toEndOf="@+id/iv_14"
+            app:layout_constraintTop_toBottomOf="@+id/iv_11"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/tv_gameCurrentCard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:text="Current played card"
+            android:textSize="24sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@+id/iv_current"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/iv_current" />
+
+        <TextView
+            android:id="@+id/tv_gameYourBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="70dp"
+            android:text="Your board"
+            android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_gameCurrentCard" />
+
+        <TextView
+            android:id="@+id/tv_gamePlayedCards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Played cards:"
+            app:layout_constraintStart_toStartOf="@+id/iv_current"
+            app:layout_constraintTop_toTopOf="@+id/tv_gameYourBoard" />
+
+        <TextView
+            android:id="@+id/tv_gamePlayedCardsCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="12"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_gamePlayedCards"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/tv_gamePlayedCards"
+            app:layout_constraintTop_toTopOf="@+id/tv_gamePlayedCards"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
